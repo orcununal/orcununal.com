@@ -1,103 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Orçun Ünal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçun Ünal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #222;
+      background: #f8f8f6;
+      line-height: 1.65;
+    }
 
-<style>
-body {
-    font-family: Georgia, serif;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px;
-    line-height: 1.7;
-    color: #222;
-}
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
 
-header {
-    margin-bottom: 40px;
-}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 18px;
+    }
 
-h1 {
-    margin-bottom: 5px;
-}
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #333;
+      font-size: 0.95rem;
+    }
 
-.subtitle {
-    color: #666;
-    margin-top: 0;
-}
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-nav {
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
+    .hero {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 42px;
+      align-items: center;
+    }
 
-nav a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #003366;
-}
+    .hero img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+    }
 
-section {
-    margin-bottom: 50px;
-}
+    h1 {
+      font-size: 2.6rem;
+      margin: 0 0 8px;
+      font-weight: normal;
+    }
 
-footer {
-    margin-top: 60px;
-    color: #666;
-    font-size: 0.9em;
-}
-</style>
+    .subtitle {
+      font-size: 1.15rem;
+      color: #555;
+      margin-bottom: 24px;
+    }
 
+    .links a {
+      margin-right: 16px;
+      color: #003366;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-top: 58px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+      font-weight: normal;
+    }
+
+    .interests {
+      columns: 2;
+      padding-left: 20px;
+    }
+
+    footer {
+      margin-top: 70px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        display: block;
+      }
+
+      nav {
+        margin-top: 16px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0 14px 8px 0;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero img {
+        width: 190px;
+        height: 190px;
+      }
+
+      .interests {
+        columns: 1;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="container">
+    <header>
+      <div><strong>Orçun Ünal</strong></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<header>
-    <h1>Orçun Ünal</h1>
-    <p class="subtitle">
-        Turkologist · Historical Linguist<br>
-        Göttingen Academy of Sciences and Humanities
-    </p>
+    <main>
+      <section class="hero">
+        <img src="images/profile.jpg" alt="Orçun Ünal">
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Research</a>
-        <a href="#">Publications</a>
-        <a href="#">Books</a>
-        <a href="#">CV</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
+        <div>
+          <h1>Orçun Ünal</h1>
+          <div class="subtitle">
+            Turkologist · Historical Linguist<br>
+            Göttingen Academy of Sciences and Humanities
+          </div>
 
-<section>
-    <h2>About</h2>
+          <p>
+            Orçun Ünal is a Turkologist and historical linguist at the Göttingen Academy of Sciences and Humanities in Lower Saxony, Germany. His research focuses on Old Turkic and Old Uyghur studies, Turkic–Mongolic language contact, Avaric runiform inscriptions, and the historical linguistics of Inner Eurasia.
+          </p>
 
-    <p>
-        I am a Turkologist and historical linguist affiliated with the
-        Göttingen Academy of Sciences and Humanities.
-        My research focuses on Old Turkic and Old Uyghur philology,
-        Turkic–Mongolic language contact, historical linguistics,
-        the Avaric language, and runiform inscriptions.
-    </p>
-</section>
+          <div class="links">
+            <a href="mailto:orcun.uenal@adwgoe.de">Email</a>
+            <a href="https://orcid.org/0000-0002-2591-9035">ORCID</a>
+            <a href="https://scholar.google.de/citations?user=6QuiO_QAAAAJ&hl=de">Google Scholar</a>
+            <a href="https://adw-goe.academia.edu/Or%C3%A7un%C3%9Cnal">Academia.edu</a>
+          </div>
+        </div>
+      </section>
 
-<section>
-    <h2>Research Interests</h2>
+      <section>
+        <h2>Research Interests</h2>
+        <ul class="interests">
+          <li>Old Turkic</li>
+          <li>Old Uyghur philology</li>
+          <li>Turkic–Mongolic language contact</li>
+          <li>Avaric runiform inscriptions</li>
+          <li>Proto-Turkic reconstruction</li>
+          <li>Historical linguistics of Inner Eurasia</li>
+        </ul>
+      </section>
+    </main>
 
-    <ul>
-        <li>Old Turkic</li>
-        <li>Old Uyghur</li>
-        <li>Turkic–Mongolic Contact</li>
-        <li>Historical Linguistics</li>
-        <li>Avaric Studies</li>
-        <li>Runiform Inscriptions</li>
-    </ul>
-</section>
-
-<footer>
-    © 2026 Orçun Ünal
-</footer>
-
+    <footer>
+      © 2026 Orçun Ünal
+    </footer>
+  </div>
 </body>
 </html>
