@@ -9,9 +9,9 @@
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  color: #222;
-  background: #f8f8f6;
-  line-height: 1.7;
+  color: #ececec;
+  background: #32373b;
+  line-height: 1.75;
 }
 
 .container {
@@ -25,30 +25,53 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #555;
   padding-bottom: 18px;
 }
 
 nav a {
   margin-left: 22px;
   text-decoration: none;
-  color: #333;
+  color: #e2e2e2;
+  font-size: 0.95rem;
 }
 
 nav a:hover {
+  color: #ffffff;
   text-decoration: underline;
 }
 
 h1 {
   font-weight: normal;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+p {
+  color: #e6e6e6;
 }
 
 footer {
   margin-top: 60px;
   padding-top: 20px;
-  border-top: 1px solid #ddd;
-  color: #666;
+  border-top: 1px solid #555;
+  color: #b8b8b8;
   font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  header {
+    display: block;
+  }
+
+  nav {
+    margin-top: 16px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0 14px 8px 0;
+  }
 }
 </style>
 </head>
